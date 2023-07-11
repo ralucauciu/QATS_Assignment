@@ -5,7 +5,7 @@ from selenium.webdriver.common.actions.action_builder import ActionBuilder
 from selenium.webdriver.common.actions.pointer_input import PointerInput
 from selenium.webdriver.common.action_chains import ActionChains
 
-desired_cap={
+desired_cap = {
     "platformName": "Android",
     "appium:deviceName": "HA15G3JS",
     "appium:automationName": "UiAutomator2",
@@ -14,7 +14,7 @@ desired_cap={
     "appium:appActivity": "com.android.deskclock.DeskClock"
 }
 
-driver = webdriver.Remote("http://127.0.0.1:4723",desired_cap)
+driver = webdriver.Remote("http://127.0.0.1:4723", desired_cap)
 driver.implicitly_wait(30)
 
 # in the clock section go to alarm
